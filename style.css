@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Gopher';
+}
+
+input[type='text'],
+button,
+select {
+  font-family: 'Betm Med';
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  color: #efefef;
+  font-size: 18px;
+  transition: 0.2s all ease-in;
+
+}
+
+button:active {
+  transform: translateY(5px);
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  overflow-y: hidden;
+}
+
+#result {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 100px;
+    font-size: 40px;
+}
+
+.operations {
+margin-bottom: 100px;
+}
