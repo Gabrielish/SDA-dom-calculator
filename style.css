@@ -10,9 +10,10 @@ html {
   font-family: 'Gopher';
 }
 
-input[type='text'],
+input[type='number'],
 button,
 select {
+  -moz-appearance: textfield;
   font-family: 'Betm Med';
   text-align: center;
   padding: 20px;

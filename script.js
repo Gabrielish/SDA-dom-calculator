@@ -1,4 +1,6 @@
-function calc() {
+let btn = document.getElementById('btn')
+btn.onclick = function(e) {
+    e.preventDefault()
     let number1 = parseInt(document.getElementById('number1').value)
     let number2 = parseInt(document.getElementById('number2').value)
     let operations = document.getElementById('operations').value
@@ -13,12 +15,10 @@ function calc() {
         number2 = document.getElementById('result').value = number1 * number2
     }
     if(operations === '/') {
-        if (number2 == 0 || number1 == 0) {
+        if (number2 == 0) {
             number2 = document.getElementById('result').value = 'Nu se poate imparti la 0'
         } else {
             number2 = document.getElementById('result').value = number1 / number2
         }
-        
-    }
-    
+    } 
 }

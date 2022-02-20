@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="calculator-box">
-      <div class="result">
-        <input type="text" id="result" placeholder="output" readonly="readonly" value="0" disabled/>
-      </div>
-      <div class="operations">
-        <input type="text" id="number1" value="0" />
-        <input type="text" id="number2" value="0" />
+      <form method="" class="result">
+        <input type="number" id="result" placeholder="0" readonly="readonly" value="0" disabled/>
+      </form>
+      <form class="operations">
+        <input type="number" id="number1" />
+        <input type="number" id="number2" />
 
         <select id="operations">
           <option value="+">+</option>
@@ -22,8 +22,8 @@
           <option value="*">*</option>
           <option value="/">/</option>
         </select>
-        <button onclick="calc()">Go</button>
-      </div>
+        <button id="btn">Go</button>
+      </form>
     </div>
     <script src="script.js"></script>
   </body>
